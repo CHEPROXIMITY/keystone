@@ -17,11 +17,12 @@ function getId () {
 
 // Workaround for #2834 found here https://github.com/tinymce/tinymce/issues/794#issuecomment-203701329
 function removeTinyMCEInstance (editor) {
-	var oldLength = tinymce.editors.length;
-	tinymce.remove(editor);
-	if (oldLength === tinymce.editors.length) {
-		tinymce.editors.remove(editor);
-	}
+	return
+	// var oldLength = tinymce.editors.length;
+	// tinymce.remove(editor);
+	// if (oldLength === tinymce.editors.length) {
+	// 	tinymce.editors.remove(editor);
+	// }
 }
 
 module.exports = Field.create({
